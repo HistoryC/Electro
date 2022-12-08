@@ -46,7 +46,7 @@ public class Gui_main {
 	
 	public Gui_main(String name, String label){	
 		
-		
+		System.out.print(false);
 		main_GUI = new JFrame("MegaClean");
 		main_GUI.setTitle (name);
 		main_GUI.setBounds(600,150,665,530);
