@@ -25,6 +25,7 @@ public class ListenerCalc implements ActionListener {
 			}
 			else if (item2==transfer2[1]) {
 				Output.setText("2");
+				System.out.print(false);
 			}
 		}
 		
