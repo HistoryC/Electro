@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JCheckBox;
+import javax.swing.JSlider;
 
 public class ListenerCalc implements ActionListener {
 	
@@ -17,36 +19,49 @@ public class ListenerCalc implements ActionListener {
 		String item2 = (String)combo2.getSelectedItem();
 		String[] transfer1 = Main.gui.getTransferTarif();
 		String[] transfer2 = Main.gui.getTransferWindowCleaning();
-		JLabel Output = Main.gui.getLabelOutput();	
+		JCheckBox[] arrayCheckBox = Main.gui.getCheckBox();
+		JLabel Output = Main.gui.getLabelOutput();
+		JSlider sliderSize = Main.gui.getSliderSize();
+		
 		
 		if (item1==transfer1[0]) {
+			double[] cost = {2000,400,800,500,400,300,900,700,2000,1000};
+			One_tarif tarif;
 			if (item2==transfer2[0]) {
-				Output.setText("1");
+				tarif = new One_tarif(arrayCheckBox, cost, sliderSize.getValue(), 150, 2);
+				Output.setText(tarif.toString());
 			}
 			else if (item2==transfer2[1]) {
-				Output.setText("2");
-				System.out.print(false);
+				tarif = new One_tarif(arrayCheckBox, cost, sliderSize.getValue(), 150, 1);
+				Output.setText(tarif.toString());
 			}
 		}
 		
 		if (item1==transfer1[1]) {
-
+			double[] cost = {2000,400,800,500,400,300,900,700,2000,1000};
+			One_tarif tarif;
 			if (item2==transfer2[0]) {
-				Output.setText("3");
+				tarif = new One_tarif(arrayCheckBox, cost, sliderSize.getValue(), 450, 2);
+				Output.setText(tarif.toString());
 			}
 			else if (item2==transfer2[1]) {
-				Output.setText("4");
+				tarif = new One_tarif(arrayCheckBox, cost, sliderSize.getValue(), 450, 1);
+				Output.setText(tarif.toString());
 			}
 		}
 		
 		if (item1==transfer1[2]) {
-
+			double[] cost = {2000,400,800,500,400,300,900,700,2000,1000};
+			One_tarif tarif;
 			if (item2==transfer2[0]) {
-				Output.setText("5");
+				tarif = new One_tarif(arrayCheckBox, cost, sliderSize.getValue(), 340, 2);
+				Output.setText(tarif.toString());
 			}
 			else if (item2==transfer2[1]) {
-				Output.setText("6");
+				tarif = new One_tarif(arrayCheckBox, cost, sliderSize.getValue(), 340, 1);
+				Output.setText(tarif.toString());
 			}
 		}		
 	}
+
 }
