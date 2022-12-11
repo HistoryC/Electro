@@ -15,8 +15,8 @@ public abstract class Calc {
 	private double windowCleaningTarif=0;
 	
 	/**
-	 * перемножение с переменной baseTarif
-	 * @param value - размер квартиры
+	 * РїРµСЂРµРјРЅРѕР¶РµРЅРёРµ СЃ РїРµСЂРµРјРµРЅРЅРѕР№ baseTarif
+	 * @param value - СЂР°Р·РјРµСЂ РєРІР°СЂС‚РёСЂС‹
 	 * @param sum
 	 * @return sum
 	 */
@@ -25,14 +25,14 @@ public abstract class Calc {
 		return sum;
 	}
 	/**
-	 * сумма
+	 * СЃСѓРјРјР°
 	 */
 	public void sumA() {	
 		
 	}
 	/**
-	 * перемножение с переменной windowCleaningTarif
-	 * @param value - стоимость мойки окон
+	 * РїРµСЂРµРјРЅРѕР¶РµРЅРёРµ СЃ РїРµСЂРµРјРµРЅРЅРѕР№ windowCleaningTarif
+	 * @param value - СЃС‚РѕРёРјРѕСЃС‚СЊ РјРѕР№РєРё РѕРєРѕРЅ
 	 * @param sum
 	 * @return sum
 	 */
@@ -41,7 +41,7 @@ public abstract class Calc {
 		return sum;
 	}
 	/**
-	 * возвращает значение переменной baseTarif
+	 * РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ baseTarif
 	 * @return baseTarif
 	 */
 	public double getBaseTarif() {
@@ -49,7 +49,7 @@ public abstract class Calc {
 	}
 	
 	/**
-	 * возвращает значение переменной windowCleaningTarif
+	 * РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ windowCleaningTarif
 	 * @return windowCleaningTarif
 	 */
 	public double getWCTarif() {
@@ -57,7 +57,7 @@ public abstract class Calc {
 	}
 	
 	/**
-	 * устанавливает переменной baseTarif новое значение
+	 * СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РїРµСЂРµРјРµРЅРЅРѕР№ baseTarif РЅРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ
 	 * @param tarif
 	 */
 	public void setBaseTarif(double tarif) {
@@ -65,7 +65,7 @@ public abstract class Calc {
 	}
 	
 	/**
-	 * устанавливает переменной windowCleaningTarif новое значение
+	 * СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РїРµСЂРµРјРµРЅРЅРѕР№ windowCleaningTarif РЅРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ
 	 * @param tarif
 	 */
 	public void setWCTarif(double tarif) {
